@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11521.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="apiSettingsPopup" customModule="IOT_Control" customModuleProvider="target">
+            <connections>
+                <outlet property="key" destination="dw4-2J-9Wb" id="dcj-yh-OQx"/>
+                <outlet property="login" destination="c5l-7T-APY" id="TAa-O2-ebd"/>
+                <outlet property="name" destination="UvK-Ls-ixL" id="cgP-sO-e7w"/>
+                <outlet property="password" destination="26s-nT-x8l" id="Rfh-AS-88y"/>
+                <outlet property="popupView" destination="Jdl-XX-QDK" id="mM7-6n-JIZ"/>
+                <outlet property="topConstraint" destination="3z5-8t-kf4" id="gmK-EE-awD"/>
+                <outlet property="type" destination="2lC-nL-Ngw" id="ll7-XK-k2q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jdl-XX-QDK">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="API Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZ4-FY-nek">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="99" id="gB9-n0-DaQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Profile Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UvK-Ls-ixL">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="243" id="G6T-dV-rSP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="API Key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dw4-2J-9Wb">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="243" id="TLn-Xb-l1i"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="API Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5l-7T-APY">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="243" id="abr-Mv-jwO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="API Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="26s-nT-x8l">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="243" id="w7d-Rd-o9H"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                        </textField>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2lC-nL-Ngw">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="243" id="Ep8-7B-jsm"/>
+                            </constraints>
+                            <segments>
+                                <segment title="Sandbox"/>
+                                <segment title="Pro"/>
+                                <segment title="Renesas"/>
+                            </segments>
+                            <color key="tintColor" red="0.36470588240000001" green="0.73725490199999999" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </segmentedControl>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fo-oi-uf1">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="56" id="bMi-DA-grA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="15"/>
+                            <color key="tintColor" red="0.36470588240000001" green="0.73725490199999999" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Cancel"/>
+                            <connections>
+                                <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="aPq-bB-jHb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubh-c5-ZFa">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="zzx-3U-VG6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="15"/>
+                            <color key="tintColor" red="0.36470588240000001" green="0.73725490199999999" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Done"/>
+                            <connections>
+                                <action selector="doneAction:" destination="-1" eventType="touchUpInside" id="F0Z-h7-gjb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="280" id="18C-hu-b1o"/>
+                        <constraint firstItem="6fo-oi-uf1" firstAttribute="top" secondItem="2lC-nL-Ngw" secondAttribute="bottom" constant="25" id="6BM-d3-EV0"/>
+                        <constraint firstItem="uZ4-FY-nek" firstAttribute="centerX" secondItem="Jdl-XX-QDK" secondAttribute="centerX" id="AgZ-RG-Z7V"/>
+                        <constraint firstItem="26s-nT-x8l" firstAttribute="top" secondItem="c5l-7T-APY" secondAttribute="bottom" constant="8" id="DRO-wT-eQu"/>
+                        <constraint firstAttribute="trailing" secondItem="Ubh-c5-ZFa" secondAttribute="trailing" constant="8" id="Jj5-Wk-dqT"/>
+                        <constraint firstItem="c5l-7T-APY" firstAttribute="centerX" secondItem="Jdl-XX-QDK" secondAttribute="centerX" id="Nc2-xU-W8k"/>
+                        <constraint firstItem="2lC-nL-Ngw" firstAttribute="centerX" secondItem="Jdl-XX-QDK" secondAttribute="centerX" id="PTm-hd-Mw9"/>
+                        <constraint firstItem="c5l-7T-APY" firstAttribute="top" secondItem="dw4-2J-9Wb" secondAttribute="bottom" constant="8" id="T8L-XR-HKq"/>
+                        <constraint firstItem="2lC-nL-Ngw" firstAttribute="top" secondItem="26s-nT-x8l" secondAttribute="bottom" constant="8" id="VyM-go-PGh"/>
+                        <constraint firstAttribute="width" constant="305" id="asM-oS-YcN"/>
+                        <constraint firstItem="dw4-2J-9Wb" firstAttribute="centerX" secondItem="Jdl-XX-QDK" secondAttribute="centerX" id="atN-cP-EHE"/>
+                        <constraint firstItem="UvK-Ls-ixL" firstAttribute="centerX" secondItem="Jdl-XX-QDK" secondAttribute="centerX" id="bhB-h9-m2U"/>
+                        <constraint firstItem="26s-nT-x8l" firstAttribute="centerX" secondItem="Jdl-XX-QDK" secondAttribute="centerX" id="eoH-CA-AdJ"/>
+                        <constraint firstItem="6fo-oi-uf1" firstAttribute="baseline" secondItem="Ubh-c5-ZFa" secondAttribute="baseline" id="fAk-iy-3sd"/>
+                        <constraint firstItem="UvK-Ls-ixL" firstAttribute="top" secondItem="uZ4-FY-nek" secondAttribute="bottom" constant="16" id="fVM-Qd-kDb"/>
+                        <constraint firstItem="dw4-2J-9Wb" firstAttribute="top" secondItem="UvK-Ls-ixL" secondAttribute="bottom" constant="8" id="oun-Mz-kFe"/>
+                        <constraint firstItem="6fo-oi-uf1" firstAttribute="leading" secondItem="Jdl-XX-QDK" secondAttribute="leading" constant="8" id="vp4-Rc-vDC"/>
+                        <constraint firstItem="uZ4-FY-nek" firstAttribute="top" secondItem="Jdl-XX-QDK" secondAttribute="top" constant="8" id="y7I-iR-sRH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jdl-XX-QDK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="3z5-8t-kf4"/>
+                <constraint firstItem="Jdl-XX-QDK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="siL-d8-3oN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

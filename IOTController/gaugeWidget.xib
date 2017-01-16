@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11521.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="164" id="KGk-i7-Jjw" customClass="gaugeWidget" customModule="IOT_Control" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhE-2J-c1T">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="82" id="P0N-YG-oDK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfJ-fN-1Ec">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="MJh-kV-wd4"/>
+                            <constraint firstAttribute="width" constant="50" id="iWd-xH-lUb"/>
+                        </constraints>
+                        <state key="normal" image="Gauge.png"/>
+                        <connections>
+                            <action selector="gaugeSettings:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Svg-PT-BtF"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KL5-PB-fLA">
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mwr-6M-w6g">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="uJU-yb-epB"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k92-Xw-Frm">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="nJj-wg-skP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrT-Ft-NOR">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="C1U-qz-QvH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="OrT-Ft-NOR" firstAttribute="top" secondItem="Mwr-6M-w6g" secondAttribute="bottom" constant="1" id="1Ts-m7-mto"/>
+                            <constraint firstItem="k92-Xw-Frm" firstAttribute="top" secondItem="Mwr-6M-w6g" secondAttribute="bottom" constant="1" id="7yA-L6-PMr"/>
+                            <constraint firstItem="k92-Xw-Frm" firstAttribute="trailing" secondItem="Mwr-6M-w6g" secondAttribute="trailing" id="Ond-JL-LFR"/>
+                            <constraint firstItem="OrT-Ft-NOR" firstAttribute="leading" secondItem="Mwr-6M-w6g" secondAttribute="leading" id="PS6-IF-M2T"/>
+                            <constraint firstItem="Mwr-6M-w6g" firstAttribute="top" secondItem="KL5-PB-fLA" secondAttribute="top" id="aiT-o1-dnJ"/>
+                            <constraint firstAttribute="bottom" secondItem="Mwr-6M-w6g" secondAttribute="bottom" constant="22" id="eTh-oq-roT"/>
+                            <constraint firstItem="Mwr-6M-w6g" firstAttribute="centerX" secondItem="KL5-PB-fLA" secondAttribute="centerX" id="poq-jc-WZE"/>
+                            <constraint firstAttribute="height" constant="119.5" id="qZf-ST-wT0"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVm-rh-3d5">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="JJl-AC-yAz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FVm-rh-3d5" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="69O-2A-1q8"/>
+                    <constraint firstItem="FVm-rh-3d5" firstAttribute="centerX" secondItem="Mwr-6M-w6g" secondAttribute="centerX" id="AFC-hn-vs8"/>
+                    <constraint firstItem="QhE-2J-c1T" firstAttribute="leading" secondItem="KL5-PB-fLA" secondAttribute="trailing" constant="20" id="HA6-6i-ea3"/>
+                    <constraint firstItem="MfJ-fN-1Ec" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Sfh-4d-cYQ"/>
+                    <constraint firstItem="MfJ-fN-1Ec" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UtJ-Kp-yqY"/>
+                    <constraint firstItem="QhE-2J-c1T" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aIq-cw-k3T"/>
+                    <constraint firstItem="FVm-rh-3d5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="64" id="k5I-Aa-RhB"/>
+                    <constraint firstItem="QhE-2J-c1T" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="pNx-fk-ear"/>
+                    <constraint firstItem="KL5-PB-fLA" firstAttribute="leading" secondItem="MfJ-fN-1Ec" secondAttribute="trailing" constant="22" id="seJ-TY-21p"/>
+                    <constraint firstItem="KL5-PB-fLA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="vxU-Lq-5rU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="gaugeContainer" destination="Mwr-6M-w6g" id="4az-xi-qfU"/>
+                <outlet property="gaugeView" destination="KL5-PB-fLA" id="CiN-ze-Ib4"/>
+                <outlet property="maxLabel" destination="k92-Xw-Frm" id="dk2-3K-zMc"/>
+                <outlet property="minLabel" destination="OrT-Ft-NOR" id="lpo-04-WJZ"/>
+                <outlet property="tagLabel" destination="FVm-rh-3d5" id="61d-On-mOg"/>
+                <outlet property="value" destination="QhE-2J-c1T" id="O9T-6v-sgm"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="69"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Gauge.png" width="480" height="507"/>
+    </resources>
+</document>

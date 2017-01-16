@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Raleway-Regular.ttf">
+            <string>Raleway</string>
+            <string>Raleway</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="addWidgetPopup" customModule="IOT_Control" customModuleProvider="target">
+            <connections>
+                <outlet property="popupView" destination="Rev-pQ-RlD" id="0kR-F0-TSz"/>
+                <outlet property="tableView" destination="B9K-S6-pAe" id="ysr-mN-z6j"/>
+                <outlet property="topConstraint" destination="UmC-Fy-E7j" id="7uC-NV-mai"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rev-pQ-RlD">
+                    <rect key="frame" x="148" y="50" width="305" height="308"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Widget" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7Z-km-fYp">
+                            <rect key="frame" x="65" y="8" width="175" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="175" id="ynD-mt-dkK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B9K-S6-pAe">
+                            <rect key="frame" x="22" y="45" width="258" height="234"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hk-f8-sJC">
+                            <rect key="frame" x="243" y="4" width="62" height="30"/>
+                            <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="15"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.36470588240000001" green="0.73725490199999999" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="closePopup:" destination="-1" eventType="touchUpInside" id="JrZ-A1-Fa7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Z7Z-km-fYp" secondAttribute="trailing" constant="107" id="4lf-mQ-ZwI"/>
+                        <constraint firstItem="B9K-S6-pAe" firstAttribute="top" secondItem="3hk-f8-sJC" secondAttribute="bottom" constant="11" id="6x3-73-sMS"/>
+                        <constraint firstItem="3hk-f8-sJC" firstAttribute="top" secondItem="Rev-pQ-RlD" secondAttribute="top" constant="4" id="7ob-6U-jrG"/>
+                        <constraint firstItem="Z7Z-km-fYp" firstAttribute="centerX" secondItem="Rev-pQ-RlD" secondAttribute="centerX" id="F1V-vB-xaz"/>
+                        <constraint firstItem="Z7Z-km-fYp" firstAttribute="leading" secondItem="Rev-pQ-RlD" secondAttribute="leading" constant="107" id="QQh-Xz-cPv"/>
+                        <constraint firstItem="B9K-S6-pAe" firstAttribute="leading" secondItem="Rev-pQ-RlD" secondAttribute="leading" constant="22" id="SeI-Z9-iRo"/>
+                        <constraint firstItem="Z7Z-km-fYp" firstAttribute="top" secondItem="Rev-pQ-RlD" secondAttribute="top" constant="8" id="Sr8-sA-eJs"/>
+                        <constraint firstAttribute="width" constant="305" id="V7N-WH-7CC"/>
+                        <constraint firstAttribute="bottom" secondItem="B9K-S6-pAe" secondAttribute="bottom" constant="29" id="V7W-nM-1fg"/>
+                        <constraint firstAttribute="trailing" secondItem="3hk-f8-sJC" secondAttribute="trailing" id="W22-q9-DAr"/>
+                        <constraint firstAttribute="height" constant="308" id="WEB-Oo-ExT"/>
+                        <constraint firstAttribute="height" constant="308" id="a0S-hY-SmM"/>
+                        <constraint firstAttribute="width" constant="305" id="eLw-zK-STp"/>
+                        <constraint firstAttribute="trailing" secondItem="B9K-S6-pAe" secondAttribute="trailing" constant="25" id="iW8-7d-vzz"/>
+                        <constraint firstItem="3hk-f8-sJC" firstAttribute="leading" secondItem="Z7Z-km-fYp" secondAttribute="trailing" constant="3" id="n3V-7m-B8E"/>
+                        <constraint firstItem="B9K-S6-pAe" firstAttribute="top" secondItem="Z7Z-km-fYp" secondAttribute="bottom" constant="16" id="wR3-dS-5Mg"/>
+                        <constraint firstItem="B9K-S6-pAe" firstAttribute="top" secondItem="Z7Z-km-fYp" secondAttribute="bottom" constant="16" id="wqi-LV-0pp"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="V7N-WH-7CC"/>
+                            <exclude reference="WEB-Oo-ExT"/>
+                            <exclude reference="wR3-dS-5Mg"/>
+                            <exclude reference="4lf-mQ-ZwI"/>
+                            <exclude reference="QQh-Xz-cPv"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Rev-pQ-RlD" secondAttribute="bottom" constant="156" id="39e-fS-rr5"/>
+                <constraint firstItem="Rev-pQ-RlD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="136" id="41A-q5-Kq3"/>
+                <constraint firstAttribute="bottom" secondItem="Rev-pQ-RlD" secondAttribute="bottom" constant="146" id="8gu-ON-Phc"/>
+                <constraint firstItem="Rev-pQ-RlD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="PkC-rg-ZyM"/>
+                <constraint firstAttribute="bottom" secondItem="Rev-pQ-RlD" secondAttribute="bottom" constant="156" id="PtS-dw-1Gv"/>
+                <constraint firstItem="Rev-pQ-RlD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="136" id="QQV-Xy-vom"/>
+                <constraint firstItem="Rev-pQ-RlD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="UmC-Fy-E7j"/>
+                <constraint firstItem="Rev-pQ-RlD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="48" id="agh-72-Q1O"/>
+                <constraint firstItem="Rev-pQ-RlD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="148" id="c1T-ck-xh7"/>
+                <constraint firstItem="Rev-pQ-RlD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g2u-AD-bgh"/>
+                <constraint firstItem="Rev-pQ-RlD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="148" id="glW-7f-9kI"/>
+                <constraint firstItem="Rev-pQ-RlD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="js0-hX-IgN"/>
+                <constraint firstItem="Rev-pQ-RlD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="146" id="pP6-n1-3k2"/>
+                <constraint firstItem="Rev-pQ-RlD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="r00-xd-1CE"/>
+                <constraint firstAttribute="trailing" secondItem="Rev-pQ-RlD" secondAttribute="trailing" constant="147" id="yOF-mE-C3H"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="39e-fS-rr5"/>
+                    <exclude reference="41A-q5-Kq3"/>
+                    <exclude reference="8gu-ON-Phc"/>
+                    <exclude reference="PkC-rg-ZyM"/>
+                    <exclude reference="PtS-dw-1Gv"/>
+                    <exclude reference="QQV-Xy-vom"/>
+                    <exclude reference="agh-72-Q1O"/>
+                    <exclude reference="c1T-ck-xh7"/>
+                    <exclude reference="g2u-AD-bgh"/>
+                    <exclude reference="glW-7f-9kI"/>
+                    <exclude reference="js0-hX-IgN"/>
+                    <exclude reference="pP6-n1-3k2"/>
+                    <exclude reference="yOF-mE-C3H"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

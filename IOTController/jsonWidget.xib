@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11521.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="jsonWidget" customModule="IOT_Control" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXt-on-cok">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="PML-CD-oL0"/>
+                            <constraint firstAttribute="height" constant="50" id="zmM-x6-mdW"/>
+                        </constraints>
+                        <state key="normal" image="JSON.png"/>
+                        <connections>
+                            <action selector="jsonSettings:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1P0-dQ-rjd"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cq1-Wy-S0e">
+                        <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8n-sn-gW5">
+                        <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="15"/>
+                        <state key="normal" title="Send">
+                            <color key="titleColor" red="0.36470588240000001" green="0.73725490199999999" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="sendJSON:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="p1l-hG-VzK"/>
+                        </connections>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WMg-AI-NUP">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="P9p-IS-dYy"/>
+                            <constraint firstAttribute="width" constant="299" id="QAT-Qr-TX3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="11"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log Output:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxF-pB-Lkf">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="91" id="n4B-rJ-ogi"/>
+                            <constraint firstAttribute="height" constant="21" id="tfb-e2-8In"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[key]:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLQ-LY-KeU">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="qb1-8p-lNn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Cq1-Wy-S0e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="5OF-I7-qhf"/>
+                    <constraint firstItem="j8n-sn-gW5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="19" id="KK1-VN-m2F"/>
+                    <constraint firstItem="j8n-sn-gW5" firstAttribute="leading" secondItem="Cq1-Wy-S0e" secondAttribute="trailing" constant="13" id="WTz-Aa-Gxe"/>
+                    <constraint firstItem="GLQ-LY-KeU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="ZZ7-eJ-Fy7"/>
+                    <constraint firstAttribute="trailing" secondItem="GLQ-LY-KeU" secondAttribute="trailing" constant="58" id="bfP-bG-qht"/>
+                    <constraint firstItem="Cq1-Wy-S0e" firstAttribute="leading" secondItem="FXt-on-cok" secondAttribute="trailing" constant="8" id="cVp-Sl-3ba"/>
+                    <constraint firstItem="WMg-AI-NUP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="dKG-5x-0Nk"/>
+                    <constraint firstItem="FXt-on-cok" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="gmZ-qc-Jbl"/>
+                    <constraint firstItem="WMg-AI-NUP" firstAttribute="top" secondItem="FXt-on-cok" secondAttribute="bottom" constant="-1" id="jIu-vy-1gk"/>
+                    <constraint firstItem="j8n-sn-gW5" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="jOI-np-cyY"/>
+                    <constraint firstItem="vxF-pB-Lkf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="9.5" id="kOZ-VN-fGe"/>
+                    <constraint firstItem="j8n-sn-gW5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-30.5" id="mG5-WW-5p3"/>
+                    <constraint firstItem="Cq1-Wy-S0e" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-29.5" id="qw0-GI-KtQ"/>
+                    <constraint firstItem="FXt-on-cok" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="sqJ-r1-Rb4"/>
+                    <constraint firstItem="GLQ-LY-KeU" firstAttribute="leading" secondItem="FXt-on-cok" secondAttribute="trailing" constant="8" id="sxf-pi-iq9"/>
+                    <constraint firstItem="vxF-pB-Lkf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="vc2-BG-B87"/>
+                    <constraint firstItem="FXt-on-cok" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-30.5" id="vhT-i6-VZ0"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="vhT-i6-VZ0"/>
+                        <exclude reference="qw0-GI-KtQ"/>
+                        <exclude reference="mG5-WW-5p3"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="logOutput" destination="WMg-AI-NUP" id="d6j-1a-MsS"/>
+                <outlet property="tagLabel" destination="GLQ-LY-KeU" id="4Ef-75-JkN"/>
+                <outlet property="value" destination="Cq1-Wy-S0e" id="4Sb-J3-Mq5"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="56.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="JSON.png" width="480" height="507"/>
+    </resources>
+</document>

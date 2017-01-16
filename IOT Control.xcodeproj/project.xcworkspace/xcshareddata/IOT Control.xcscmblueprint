@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BFBF7DDB58B61BF7AFF7890DA13CE1E740CDF6E9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BFBF7DDB58B61BF7AFF7890DA13CE1E740CDF6E9" : 0,
+    "DEC2EE83350490400FB30988EAB4C579C37D09C9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D6A18219-5F0B-4C85-B4E2-1E69C5010C02",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BFBF7DDB58B61BF7AFF7890DA13CE1E740CDF6E9" : "iotcontroller_ios_cleaned\/",
+    "DEC2EE83350490400FB30988EAB4C579C37D09C9" : "GaugeView\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IOT Control",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "IOT Control.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/medium-1\/iotcontroller_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BFBF7DDB58B61BF7AFF7890DA13CE1E740CDF6E9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/BelkaLab\/GaugeView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DEC2EE83350490400FB30988EAB4C579C37D09C9"
+    }
+  ]
+}

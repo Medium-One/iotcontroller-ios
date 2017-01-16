@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Event">
+        <attribute name="timeStamp" optional="YES" attributeType="Date">
+            <userInfo/>
+        </attribute>
+        <userInfo/>
+    </entity>
+    <entity name="Project" syncable="YES">
+        <attribute name="apiKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="apiLogin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="apiPassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iOSCommand" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iOSKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sandbox" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="stream1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stream2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stream3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tag1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tag2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tag3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
+        <element name="Project" positionX="288" positionY="225" width="128" height="255"/>
+    </elements>
+</model>

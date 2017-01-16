@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2140F3A1D8095ED00160517 /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = A2140F391D8095ED00160517 /* Map.png */; };
+		A2140F3D1D8096FC00160517 /* savedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2140F3B1D8096FC00160517 /* savedView.swift */; };
+		A2140F3E1D8096FC00160517 /* savedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2140F3C1D8096FC00160517 /* savedView.xib */; };
+		A261327F1D8C9A5600661C76 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A261327E1D8C9A5600661C76 /* logo.png */; };
+		A262D13E1D63CEB300D25BF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A262D1371D63C45E00D25BF8 /* UIKit.framework */; };
+		A262D13F1D63CEB700D25BF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A262D1391D63C46400D25BF8 /* Foundation.framework */; };
+		A262D1401D63CEB900D25BF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A262D13B1D63C46900D25BF8 /* CoreGraphics.framework */; };
+		A262D1411D63CEBC00D25BF8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A262D1351D63C45600D25BF8 /* QuartzCore.framework */; };
+		A271DC521DBD8137000D008B /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = A271DC511DBD8137000D008B /* checkmark.png */; };
+		A2910DEB1D6BB9450094DC11 /* IOT Control.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = A2910DEA1D6BB9450094DC11 /* IOT Control.xcworkspace */; };
+		A2910DED1D6C9B6F0094DC11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2910DEC1D6C9B6F0094DC11 /* GoogleService-Info.plist */; };
+		A2A045681D81ED7500B9BDD0 /* profileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A045661D81ED7500B9BDD0 /* profileCell.swift */; };
+		A2AF54661D78EF8B00C00DB7 /* jsonWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF54641D78EF8B00C00DB7 /* jsonWidget.swift */; };
+		A2AF54671D78EF8B00C00DB7 /* jsonWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AF54651D78EF8B00C00DB7 /* jsonWidget.xib */; };
+		A2AF546A1D78F2B300C00DB7 /* mapWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF54681D78F2B300C00DB7 /* mapWidget.swift */; };
+		A2AF546B1D78F2B300C00DB7 /* mapWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AF54691D78F2B300C00DB7 /* mapWidget.xib */; };
+		A2AF546E1D7A178B00C00DB7 /* jsonSettingsPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF546C1D7A178B00C00DB7 /* jsonSettingsPopup.swift */; };
+		A2AF546F1D7A178B00C00DB7 /* jsonSettingsPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AF546D1D7A178B00C00DB7 /* jsonSettingsPopup.xib */; };
+		A2AF54721D7A555000C00DB7 /* gaugeSettingsPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF54701D7A555000C00DB7 /* gaugeSettingsPopup.swift */; };
+		A2AF54731D7A555000C00DB7 /* gaugeSettingsPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AF54711D7A555000C00DB7 /* gaugeSettingsPopup.xib */; };
+		A2AF54761D7A5F4000C00DB7 /* gaugeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF54741D7A5F4000C00DB7 /* gaugeWidget.swift */; };
+		A2AF54771D7A5F4000C00DB7 /* gaugeWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AF54751D7A5F4000C00DB7 /* gaugeWidget.xib */; };
+		A2AF547A1D7D075E00C00DB7 /* apiSettingsPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF54781D7D075E00C00DB7 /* apiSettingsPopup.swift */; };
+		A2AF547B1D7D075E00C00DB7 /* apiSettingsPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AF54791D7D075E00C00DB7 /* apiSettingsPopup.xib */; };
+		A2CEE86B1D7FA5BF000DFB2F /* singleEventWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CEE8691D7FA5BF000DFB2F /* singleEventWidget.swift */; };
+		A2CEE86C1D7FA5BF000DFB2F /* singleEventWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2CEE86A1D7FA5BF000DFB2F /* singleEventWidget.xib */; };
+		A2CEE86F1D7FAFA5000DFB2F /* multiEventWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CEE86D1D7FAFA5000DFB2F /* multiEventWidget.swift */; };
+		A2CEE8701D7FAFA5000DFB2F /* multiEventWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2CEE86E1D7FAFA5000DFB2F /* multiEventWidget.xib */; };
+		A2D30F971D72623D0012780E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D30F961D72623D0012780E /* DetailViewController.swift */; };
+		A2F8F0731D7647C5006A9BE4 /* gpsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F8F0711D7647C5006A9BE4 /* gpsWidget.swift */; };
+		A2F8F0741D7647C5006A9BE4 /* gpsWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F8F0721D7647C5006A9BE4 /* gpsWidget.xib */; };
+		A2F9111F1D774D0700818D4F /* settingsPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F9111D1D774D0700818D4F /* settingsPopup.swift */; };
+		A2F911201D774D0700818D4F /* settingsPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F9111E1D774D0700818D4F /* settingsPopup.xib */; };
+		A2F911231D77681000818D4F /* switchWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F911211D77681000818D4F /* switchWidget.swift */; };
+		A2F911241D77681000818D4F /* switchWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F911221D77681000818D4F /* switchWidget.xib */; };
+		A2F911271D77908700818D4F /* sliderWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F911251D77908700818D4F /* sliderWidget.swift */; };
+		A2F911281D77908700818D4F /* sliderWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F911261D77908700818D4F /* sliderWidget.xib */; };
+		A2FCDC5D1D76068F0040CBFF /* newWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2FCDC5C1D76068F0040CBFF /* newWidget.xib */; };
+		A2FCDC5F1D76070A0040CBFF /* newWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCDC5E1D76070A0040CBFF /* newWidget.swift */; };
+		A2FCDC621D7617B20040CBFF /* addWidgetPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCDC601D7617B20040CBFF /* addWidgetPopup.swift */; };
+		A2FCDC631D7617B20040CBFF /* addWidgetPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2FCDC611D7617B20040CBFF /* addWidgetPopup.xib */; };
+		A2FCDC661D761B7C0040CBFF /* widgetOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCDC641D761B7C0040CBFF /* widgetOption.swift */; };
+		A2FCDC671D761B7C0040CBFF /* widgetOption.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2FCDC651D761B7C0040CBFF /* widgetOption.xib */; };
+		A2FCDC6F1D761C400040CBFF /* Gauge.png in Resources */ = {isa = PBXBuildFile; fileRef = A2FCDC681D761C400040CBFF /* Gauge.png */; };
+		A2FCDC701D761C400040CBFF /* GPS.png in Resources */ = {isa = PBXBuildFile; fileRef = A2FCDC691D761C400040CBFF /* GPS.png */; };
+		A2FCDC711D761C400040CBFF /* JSON.png in Resources */ = {isa = PBXBuildFile; fileRef = A2FCDC6A1D761C400040CBFF /* JSON.png */; };
+		A2FCDC721D761C400040CBFF /* Log.png in Resources */ = {isa = PBXBuildFile; fileRef = A2FCDC6B1D761C400040CBFF /* Log.png */; };
+		A2FCDC731D761C400040CBFF /* Notification.png in Resources */ = {isa = PBXBuildFile; fileRef = A2FCDC6C1D761C400040CBFF /* Notification.png */; };
+		A2FCDC741D761C400040CBFF /* Slider.png in Resources */ = {isa = PBXBuildFile; fileRef = A2FCDC6D1D761C400040CBFF /* Slider.png */; };
+		A2FCDC751D761C400040CBFF /* Switch.png in Resources */ = {isa = PBXBuildFile; fileRef = A2FCDC6E1D761C400040CBFF /* Switch.png */; };
+		CF8B0B11A84AB90649341FBA /* Pods_IOT_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAE28B1D1A0E1C0DFE65618 /* Pods_IOT_Control.framework */; };
+		FD24F8D91D6D3FBC0070936E /* SavingExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD24F8D61D6D3FBC0070936E /* SavingExample.xcdatamodeld */; };
+		FD52FF771C1C677E005AB0BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52FF761C1C677E005AB0BB /* AppDelegate.swift */; };
+		FD52FF7C1C1C677E005AB0BB /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52FF7B1C1C677E005AB0BB /* MasterViewController.swift */; };
+		FD52FF811C1C677E005AB0BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD52FF7F1C1C677E005AB0BB /* Main.storyboard */; };
+		FD52FF831C1C677E005AB0BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD52FF821C1C677E005AB0BB /* Assets.xcassets */; };
+		FD52FF861C1C677E005AB0BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD52FF841C1C677E005AB0BB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A2D30F8A1D7247400012780E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		06651551AB6347D420BA7C30 /* Pods_IOT_ControlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOT_ControlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EAE28B1D1A0E1C0DFE65618 /* Pods_IOT_Control.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOT_Control.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEBD0AD358DEDBC14260B63 /* Pods-IOT Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOT Control.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOT Control/Pods-IOT Control.release.xcconfig"; sourceTree = "<group>"; };
+		48F6533183261ABF93B67834 /* Pods_IOT_ControlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOT_ControlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E4BB9668816AF91EF3C16C /* Pods-IOT Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOT Control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOT Control/Pods-IOT Control.debug.xcconfig"; sourceTree = "<group>"; };
+		A2140F391D8095ED00160517 /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map.png; sourceTree = "<group>"; };
+		A2140F3B1D8096FC00160517 /* savedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = savedView.swift; sourceTree = "<group>"; };
+		A2140F3C1D8096FC00160517 /* savedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = savedView.xib; sourceTree = "<group>"; };
+		A261327E1D8C9A5600661C76 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		A262D1351D63C45600D25BF8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A262D1371D63C45E00D25BF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A262D1391D63C46400D25BF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A262D13B1D63C46900D25BF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A262D13D1D63C4B300D25BF8 /* prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.h; sourceTree = "<group>"; };
+		A271DC511DBD8137000D008B /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
+		A2910DEA1D6BB9450094DC11 /* IOT Control.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = "IOT Control.xcworkspace"; sourceTree = "<group>"; };
+		A2910DEC1D6C9B6F0094DC11 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A2920E871D8F7D00003B47C4 /* IOT Control.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "IOT Control.entitlements"; sourceTree = "<group>"; };
+		A2A045661D81ED7500B9BDD0 /* profileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileCell.swift; sourceTree = "<group>"; };
+		A2AF54641D78EF8B00C00DB7 /* jsonWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jsonWidget.swift; sourceTree = "<group>"; };
+		A2AF54651D78EF8B00C00DB7 /* jsonWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = jsonWidget.xib; sourceTree = "<group>"; };
+		A2AF54681D78F2B300C00DB7 /* mapWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapWidget.swift; sourceTree = "<group>"; };
+		A2AF54691D78F2B300C00DB7 /* mapWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mapWidget.xib; sourceTree = "<group>"; };
+		A2AF546C1D7A178B00C00DB7 /* jsonSettingsPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jsonSettingsPopup.swift; sourceTree = "<group>"; };
+		A2AF546D1D7A178B00C00DB7 /* jsonSettingsPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = jsonSettingsPopup.xib; sourceTree = "<group>"; };
+		A2AF54701D7A555000C00DB7 /* gaugeSettingsPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gaugeSettingsPopup.swift; sourceTree = "<group>"; };
+		A2AF54711D7A555000C00DB7 /* gaugeSettingsPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = gaugeSettingsPopup.xib; sourceTree = "<group>"; };
+		A2AF54741D7A5F4000C00DB7 /* gaugeWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gaugeWidget.swift; sourceTree = "<group>"; };
+		A2AF54751D7A5F4000C00DB7 /* gaugeWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = gaugeWidget.xib; sourceTree = "<group>"; };
+		A2AF54781D7D075E00C00DB7 /* apiSettingsPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = apiSettingsPopup.swift; sourceTree = "<group>"; };
+		A2AF54791D7D075E00C00DB7 /* apiSettingsPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = apiSettingsPopup.xib; sourceTree = "<group>"; };
+		A2CEE8691D7FA5BF000DFB2F /* singleEventWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = singleEventWidget.swift; sourceTree = "<group>"; };
+		A2CEE86A1D7FA5BF000DFB2F /* singleEventWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = singleEventWidget.xib; sourceTree = "<group>"; };
+		A2CEE86D1D7FAFA5000DFB2F /* multiEventWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = multiEventWidget.swift; sourceTree = "<group>"; };
+		A2CEE86E1D7FAFA5000DFB2F /* multiEventWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = multiEventWidget.xib; sourceTree = "<group>"; };
+		A2D30F961D72623D0012780E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A2F8F0711D7647C5006A9BE4 /* gpsWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gpsWidget.swift; sourceTree = "<group>"; };
+		A2F8F0721D7647C5006A9BE4 /* gpsWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = gpsWidget.xib; sourceTree = "<group>"; };
+		A2F9111D1D774D0700818D4F /* settingsPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsPopup.swift; sourceTree = "<group>"; };
+		A2F9111E1D774D0700818D4F /* settingsPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = settingsPopup.xib; sourceTree = "<group>"; };
+		A2F911211D77681000818D4F /* switchWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = switchWidget.swift; sourceTree = "<group>"; };
+		A2F911221D77681000818D4F /* switchWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = switchWidget.xib; sourceTree = "<group>"; };
+		A2F911251D77908700818D4F /* sliderWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sliderWidget.swift; sourceTree = "<group>"; };
+		A2F911261D77908700818D4F /* sliderWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = sliderWidget.xib; sourceTree = "<group>"; };
+		A2FCDC5C1D76068F0040CBFF /* newWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = newWidget.xib; sourceTree = "<group>"; };
+		A2FCDC5E1D76070A0040CBFF /* newWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newWidget.swift; sourceTree = "<group>"; };
+		A2FCDC601D7617B20040CBFF /* addWidgetPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addWidgetPopup.swift; sourceTree = "<group>"; };
+		A2FCDC611D7617B20040CBFF /* addWidgetPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = addWidgetPopup.xib; sourceTree = "<group>"; };
+		A2FCDC641D761B7C0040CBFF /* widgetOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = widgetOption.swift; sourceTree = "<group>"; };
+		A2FCDC651D761B7C0040CBFF /* widgetOption.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = widgetOption.xib; sourceTree = "<group>"; };
+		A2FCDC681D761C400040CBFF /* Gauge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gauge.png; sourceTree = "<group>"; };
+		A2FCDC691D761C400040CBFF /* GPS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GPS.png; sourceTree = "<group>"; };
+		A2FCDC6A1D761C400040CBFF /* JSON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JSON.png; sourceTree = "<group>"; };
+		A2FCDC6B1D761C400040CBFF /* Log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Log.png; sourceTree = "<group>"; };
+		A2FCDC6C1D761C400040CBFF /* Notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Notification.png; sourceTree = "<group>"; };
+		A2FCDC6D1D761C400040CBFF /* Slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slider.png; sourceTree = "<group>"; };
+		A2FCDC6E1D761C400040CBFF /* Switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Switch.png; sourceTree = "<group>"; };
+		FD24F8D71D6D3FBC0070936E /* IOTControl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IOTControl.xcdatamodel; sourceTree = "<group>"; };
+		FD24F8D81D6D3FBC0070936E /* SavingExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SavingExample.xcdatamodel; sourceTree = "<group>"; };
+		FD52FF731C1C677E005AB0BB /* IOT Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOT Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD52FF761C1C677E005AB0BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD52FF7B1C1C677E005AB0BB /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		FD52FF801C1C677E005AB0BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD52FF821C1C677E005AB0BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD52FF851C1C677E005AB0BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD52FF871C1C677E005AB0BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD52FF701C1C677E005AB0BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A262D1411D63CEBC00D25BF8 /* QuartzCore.framework in Frameworks */,
+				A262D1401D63CEB900D25BF8 /* CoreGraphics.framework in Frameworks */,
+				A262D13E1D63CEB300D25BF8 /* UIKit.framework in Frameworks */,
+				A262D13F1D63CEB700D25BF8 /* Foundation.framework in Frameworks */,
+				CF8B0B11A84AB90649341FBA /* Pods_IOT_Control.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BBB72C1026F2692EECE3A66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95E4BB9668816AF91EF3C16C /* Pods-IOT Control.debug.xcconfig */,
+				3CEBD0AD358DEDBC14260B63 /* Pods-IOT Control.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		63A6FAD207CEEBBAE58FCEAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EAE28B1D1A0E1C0DFE65618 /* Pods_IOT_Control.framework */,
+				06651551AB6347D420BA7C30 /* Pods_IOT_ControlTests.framework */,
+				48F6533183261ABF93B67834 /* Pods_IOT_ControlUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A261DAFA1D85D4C9009A2181 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				A2FCDC681D761C400040CBFF /* Gauge.png */,
+				A2FCDC691D761C400040CBFF /* GPS.png */,
+				A2FCDC6A1D761C400040CBFF /* JSON.png */,
+				A2FCDC6D1D761C400040CBFF /* Slider.png */,
+				A2FCDC6B1D761C400040CBFF /* Log.png */,
+				A2FCDC6C1D761C400040CBFF /* Notification.png */,
+				A2FCDC6E1D761C400040CBFF /* Switch.png */,
+				A2140F391D8095ED00160517 /* Map.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		A261DB001D85D6FC009A2181 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				A2F8F0711D7647C5006A9BE4 /* gpsWidget.swift */,
+				A2F8F0721D7647C5006A9BE4 /* gpsWidget.xib */,
+				A2F911211D77681000818D4F /* switchWidget.swift */,
+				A2F911221D77681000818D4F /* switchWidget.xib */,
+				A2F911251D77908700818D4F /* sliderWidget.swift */,
+				A2F911261D77908700818D4F /* sliderWidget.xib */,
+				A2AF54741D7A5F4000C00DB7 /* gaugeWidget.swift */,
+				A2AF54751D7A5F4000C00DB7 /* gaugeWidget.xib */,
+				A2CEE8691D7FA5BF000DFB2F /* singleEventWidget.swift */,
+				A2CEE86A1D7FA5BF000DFB2F /* singleEventWidget.xib */,
+				A2CEE86D1D7FAFA5000DFB2F /* multiEventWidget.swift */,
+				A2CEE86E1D7FAFA5000DFB2F /* multiEventWidget.xib */,
+				A2AF54641D78EF8B00C00DB7 /* jsonWidget.swift */,
+				A2AF54651D78EF8B00C00DB7 /* jsonWidget.xib */,
+				A2AF54681D78F2B300C00DB7 /* mapWidget.swift */,
+				A2AF54691D78F2B300C00DB7 /* mapWidget.xib */,
+				A2FCDC5E1D76070A0040CBFF /* newWidget.swift */,
+				A2FCDC5C1D76068F0040CBFF /* newWidget.xib */,
+			);
+			name = Widgets;
+			sourceTree = "<group>";
+		};
+		A261DB011D85D7A4009A2181 /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+				A2AF54781D7D075E00C00DB7 /* apiSettingsPopup.swift */,
+				A2AF54791D7D075E00C00DB7 /* apiSettingsPopup.xib */,
+				A2FCDC641D761B7C0040CBFF /* widgetOption.swift */,
+				A2FCDC651D761B7C0040CBFF /* widgetOption.xib */,
+				A2FCDC601D7617B20040CBFF /* addWidgetPopup.swift */,
+				A2FCDC611D7617B20040CBFF /* addWidgetPopup.xib */,
+				A2F9111D1D774D0700818D4F /* settingsPopup.swift */,
+				A2F9111E1D774D0700818D4F /* settingsPopup.xib */,
+				A2AF546C1D7A178B00C00DB7 /* jsonSettingsPopup.swift */,
+				A2AF546D1D7A178B00C00DB7 /* jsonSettingsPopup.xib */,
+				A2AF54701D7A555000C00DB7 /* gaugeSettingsPopup.swift */,
+				A2AF54711D7A555000C00DB7 /* gaugeSettingsPopup.xib */,
+				A2140F3B1D8096FC00160517 /* savedView.swift */,
+				A2140F3C1D8096FC00160517 /* savedView.xib */,
+			);
+			name = Popups;
+			sourceTree = "<group>";
+		};
+		FD52FF6A1C1C677E005AB0BB = {
+			isa = PBXGroup;
+			children = (
+				A2920E871D8F7D00003B47C4 /* IOT Control.entitlements */,
+				A2910DEA1D6BB9450094DC11 /* IOT Control.xcworkspace */,
+				A262D13D1D63C4B300D25BF8 /* prefix.h */,
+				A262D13B1D63C46900D25BF8 /* CoreGraphics.framework */,
+				A262D1391D63C46400D25BF8 /* Foundation.framework */,
+				A262D1371D63C45E00D25BF8 /* UIKit.framework */,
+				A262D1351D63C45600D25BF8 /* QuartzCore.framework */,
+				FD52FF751C1C677E005AB0BB /* IOT Controller */,
+				FD52FF741C1C677E005AB0BB /* Products */,
+				5BBB72C1026F2692EECE3A66 /* Pods */,
+				63A6FAD207CEEBBAE58FCEAF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD52FF741C1C677E005AB0BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD52FF731C1C677E005AB0BB /* IOT Control.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD52FF751C1C677E005AB0BB /* IOT Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A271DC511DBD8137000D008B /* checkmark.png */,
+				A261327E1D8C9A5600661C76 /* logo.png */,
+				FD52FF871C1C677E005AB0BB /* Info.plist */,
+				A2910DEC1D6C9B6F0094DC11 /* GoogleService-Info.plist */,
+				FD24F8D61D6D3FBC0070936E /* SavingExample.xcdatamodeld */,
+				A261DAFA1D85D4C9009A2181 /* Icons */,
+				A261DB001D85D6FC009A2181 /* Widgets */,
+				A261DB011D85D7A4009A2181 /* Popups */,
+				A2D30F961D72623D0012780E /* DetailViewController.swift */,
+				FD52FF761C1C677E005AB0BB /* AppDelegate.swift */,
+				FD52FF7B1C1C677E005AB0BB /* MasterViewController.swift */,
+				A2A045661D81ED7500B9BDD0 /* profileCell.swift */,
+				FD52FF7F1C1C677E005AB0BB /* Main.storyboard */,
+				FD52FF841C1C677E005AB0BB /* LaunchScreen.storyboard */,
+				FD52FF821C1C677E005AB0BB /* Assets.xcassets */,
+			);
+			name = "IOT Controller";
+			path = IOTController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD52FF721C1C677E005AB0BB /* IOT Control */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD52FFA01C1C677E005AB0BB /* Build configuration list for PBXNativeTarget "IOT Control" */;
+			buildPhases = (
+				0079C3730655D517577075EB /* [CP] Check Pods Manifest.lock */,
+				FD52FF6F1C1C677E005AB0BB /* Sources */,
+				FD52FF701C1C677E005AB0BB /* Frameworks */,
+				FD52FF711C1C677E005AB0BB /* Resources */,
+				98DCE96A64A3522149B40C33 /* [CP] Embed Pods Frameworks */,
+				422409DC43F6A39295C2964A /* [CP] Copy Pods Resources */,
+				A2D30F8A1D7247400012780E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IOT Control";
+			productName = SavingExample;
+			productReference = FD52FF731C1C677E005AB0BB /* IOT Control.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD52FF6B1C1C677E005AB0BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Medium One";
+				TargetAttributes = {
+					FD52FF721C1C677E005AB0BB = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = W3BES7Y3S6;
+						LastSwiftMigration = 0820;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FD52FF6E1C1C677E005AB0BB /* Build configuration list for PBXProject "IOT Control" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD52FF6A1C1C677E005AB0BB;
+			productRefGroup = FD52FF741C1C677E005AB0BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD52FF721C1C677E005AB0BB /* IOT Control */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD52FF711C1C677E005AB0BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2FCDC5D1D76068F0040CBFF /* newWidget.xib in Resources */,
+				A271DC521DBD8137000D008B /* checkmark.png in Resources */,
+				A2AF54671D78EF8B00C00DB7 /* jsonWidget.xib in Resources */,
+				A2F911241D77681000818D4F /* switchWidget.xib in Resources */,
+				A2910DEB1D6BB9450094DC11 /* IOT Control.xcworkspace in Resources */,
+				A2140F3A1D8095ED00160517 /* Map.png in Resources */,
+				A2FCDC6F1D761C400040CBFF /* Gauge.png in Resources */,
+				A2AF54771D7A5F4000C00DB7 /* gaugeWidget.xib in Resources */,
+				A2FCDC631D7617B20040CBFF /* addWidgetPopup.xib in Resources */,
+				A2FCDC701D761C400040CBFF /* GPS.png in Resources */,
+				A2FCDC721D761C400040CBFF /* Log.png in Resources */,
+				A2AF546B1D78F2B300C00DB7 /* mapWidget.xib in Resources */,
+				A2FCDC751D761C400040CBFF /* Switch.png in Resources */,
+				A2FCDC671D761B7C0040CBFF /* widgetOption.xib in Resources */,
+				FD52FF861C1C677E005AB0BB /* LaunchScreen.storyboard in Resources */,
+				A2AF546F1D7A178B00C00DB7 /* jsonSettingsPopup.xib in Resources */,
+				FD52FF831C1C677E005AB0BB /* Assets.xcassets in Resources */,
+				A2FCDC711D761C400040CBFF /* JSON.png in Resources */,
+				A2F8F0741D7647C5006A9BE4 /* gpsWidget.xib in Resources */,
+				A2F911281D77908700818D4F /* sliderWidget.xib in Resources */,
+				A261327F1D8C9A5600661C76 /* logo.png in Resources */,
+				FD52FF811C1C677E005AB0BB /* Main.storyboard in Resources */,
+				A2140F3E1D8096FC00160517 /* savedView.xib in Resources */,
+				A2CEE8701D7FAFA5000DFB2F /* multiEventWidget.xib in Resources */,
+				A2FCDC731D761C400040CBFF /* Notification.png in Resources */,
+				A2F911201D774D0700818D4F /* settingsPopup.xib in Resources */,
+				A2AF547B1D7D075E00C00DB7 /* apiSettingsPopup.xib in Resources */,
+				A2AF54731D7A555000C00DB7 /* gaugeSettingsPopup.xib in Resources */,
+				A2FCDC741D761C400040CBFF /* Slider.png in Resources */,
+				A2CEE86C1D7FA5BF000DFB2F /* singleEventWidget.xib in Resources */,
+				A2910DED1D6C9B6F0094DC11 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0079C3730655D517577075EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		422409DC43F6A39295C2964A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOT Control/Pods-IOT Control-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98DCE96A64A3522149B40C33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOT Control/Pods-IOT Control-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD52FF6F1C1C677E005AB0BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D30F971D72623D0012780E /* DetailViewController.swift in Sources */,
+				A2A045681D81ED7500B9BDD0 /* profileCell.swift in Sources */,
+				A2AF54661D78EF8B00C00DB7 /* jsonWidget.swift in Sources */,
+				A2F8F0731D7647C5006A9BE4 /* gpsWidget.swift in Sources */,
+				A2140F3D1D8096FC00160517 /* savedView.swift in Sources */,
+				A2AF547A1D7D075E00C00DB7 /* apiSettingsPopup.swift in Sources */,
+				FD24F8D91D6D3FBC0070936E /* SavingExample.xcdatamodeld in Sources */,
+				A2CEE86B1D7FA5BF000DFB2F /* singleEventWidget.swift in Sources */,
+				A2CEE86F1D7FAFA5000DFB2F /* multiEventWidget.swift in Sources */,
+				A2F911231D77681000818D4F /* switchWidget.swift in Sources */,
+				A2F911271D77908700818D4F /* sliderWidget.swift in Sources */,
+				FD52FF771C1C677E005AB0BB /* AppDelegate.swift in Sources */,
+				A2F9111F1D774D0700818D4F /* settingsPopup.swift in Sources */,
+				A2AF54761D7A5F4000C00DB7 /* gaugeWidget.swift in Sources */,
+				FD52FF7C1C1C677E005AB0BB /* MasterViewController.swift in Sources */,
+				A2FCDC5F1D76070A0040CBFF /* newWidget.swift in Sources */,
+				A2AF546E1D7A178B00C00DB7 /* jsonSettingsPopup.swift in Sources */,
+				A2FCDC661D761B7C0040CBFF /* widgetOption.swift in Sources */,
+				A2AF54721D7A555000C00DB7 /* gaugeSettingsPopup.swift in Sources */,
+				A2AF546A1D78F2B300C00DB7 /* mapWidget.swift in Sources */,
+				A2FCDC621D7617B20040CBFF /* addWidgetPopup.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD52FF7F1C1C677E005AB0BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD52FF801C1C677E005AB0BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD52FF841C1C677E005AB0BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD52FF851C1C677E005AB0BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD52FF9E1C1C677E005AB0BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = IOTController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD52FF9F1C1C677E005AB0BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = IOTController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD52FFA11C1C677E005AB0BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95E4BB9668816AF91EF3C16C /* Pods-IOT Control.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "IOT Control.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = W3BES7Y3S6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = IOTController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = MediumOne.IOTIO;
+				PRODUCT_NAME = "IOT Control";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = ./IOT_Controller/;
+			};
+			name = Debug;
+		};
+		FD52FFA21C1C677E005AB0BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CEBD0AD358DEDBC14260B63 /* Pods-IOT Control.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "IOT Control.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = W3BES7Y3S6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = IOTController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = MediumOne.IOTIO;
+				PRODUCT_NAME = "IOT Control";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = ./IOT_Controller/;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD52FF6E1C1C677E005AB0BB /* Build configuration list for PBXProject "IOT Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD52FF9E1C1C677E005AB0BB /* Debug */,
+				FD52FF9F1C1C677E005AB0BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD52FFA01C1C677E005AB0BB /* Build configuration list for PBXNativeTarget "IOT Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD52FFA11C1C677E005AB0BB /* Debug */,
+				FD52FFA21C1C677E005AB0BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD24F8D61D6D3FBC0070936E /* SavingExample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD24F8D71D6D3FBC0070936E /* IOTControl.xcdatamodel */,
+				FD24F8D81D6D3FBC0070936E /* SavingExample.xcdatamodel */,
+			);
+			currentVersion = FD24F8D71D6D3FBC0070936E /* IOTControl.xcdatamodel */;
+			path = SavingExample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FD52FF6B1C1C677E005AB0BB /* Project object */;
+}

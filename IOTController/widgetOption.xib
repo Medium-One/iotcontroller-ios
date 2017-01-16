@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11521.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="widgetOption" customModule="IOT_Control" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Widget" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEa-Ig-h8z">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="133" id="dF7-8H-sLx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" text="Description" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5Q-Rj-jat">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="11"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEn-1J-smf"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GPS.png" translatesAutoresizingMaskIntoConstraints="NO" id="AMb-W4-0YP">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="FcI-FH-P2o"/>
+                            <constraint firstAttribute="height" constant="45" id="PDJ-Ui-L6Y"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fEa-Ig-h8z" firstAttribute="leading" secondItem="AMb-W4-0YP" secondAttribute="trailing" constant="8" id="0oD-Yw-sMH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fEn-1J-smf" secondAttribute="bottom" constant="-8" id="1qf-KC-2s2"/>
+                    <constraint firstAttribute="bottom" secondItem="AMb-W4-0YP" secondAttribute="bottom" constant="9" id="499-K2-tbi"/>
+                    <constraint firstItem="AMb-W4-0YP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4bC-WI-VU4"/>
+                    <constraint firstItem="fEn-1J-smf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="6ba-xP-U1p"/>
+                    <constraint firstAttribute="bottom" secondItem="fEa-Ig-h8z" secondAttribute="bottom" constant="40" id="7vS-hb-phP"/>
+                    <constraint firstItem="F5Q-Rj-jat" firstAttribute="top" secondItem="fEa-Ig-h8z" secondAttribute="bottom" constant="-3" id="9Fq-em-sDy"/>
+                    <constraint firstItem="F5Q-Rj-jat" firstAttribute="leading" secondItem="AMb-W4-0YP" secondAttribute="trailing" constant="3" id="Bp3-Q3-IRO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fEn-1J-smf" secondAttribute="trailing" constant="-8" id="LZf-qV-liM"/>
+                    <constraint firstItem="F5Q-Rj-jat" firstAttribute="leading" secondItem="AMb-W4-0YP" secondAttribute="trailing" constant="3" id="Leh-su-Ni2"/>
+                    <constraint firstAttribute="bottom" secondItem="F5Q-Rj-jat" secondAttribute="bottom" id="Tyq-aK-rzI"/>
+                    <constraint firstItem="fEn-1J-smf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="Wj6-Ue-HQe"/>
+                    <constraint firstItem="fEa-Ig-h8z" firstAttribute="leading" secondItem="AMb-W4-0YP" secondAttribute="trailing" constant="8" id="Wl3-Pa-qna"/>
+                    <constraint firstItem="fEa-Ig-h8z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-9" id="Wpx-YK-gy5"/>
+                    <constraint firstItem="AMb-W4-0YP" firstAttribute="centerY" secondItem="fEn-1J-smf" secondAttribute="centerY" id="Y93-Aa-CzZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fEa-Ig-h8z" secondAttribute="bottom" constant="48" id="dct-vg-Evb"/>
+                    <constraint firstItem="fEa-Ig-h8z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="hDA-Dx-ksx"/>
+                    <constraint firstItem="F5Q-Rj-jat" firstAttribute="leading" secondItem="AMb-W4-0YP" secondAttribute="trailing" constant="3" id="ldg-Y3-oFw"/>
+                    <constraint firstItem="AMb-W4-0YP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="qeO-55-yM2"/>
+                    <constraint firstAttribute="trailing" secondItem="fEa-Ig-h8z" secondAttribute="trailing" constant="134" id="rNd-gN-flc"/>
+                    <constraint firstAttribute="trailing" secondItem="F5Q-Rj-jat" secondAttribute="trailing" constant="13" id="sYW-bp-pRP"/>
+                    <constraint firstItem="AMb-W4-0YP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="t8c-FJ-9mB"/>
+                    <constraint firstItem="AMb-W4-0YP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="tFd-WL-V8f"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="AMb-W4-0YP" secondAttribute="bottom" constant="9" id="uTZ-Zj-A9s"/>
+                    <constraint firstItem="F5Q-Rj-jat" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="vrG-Eo-Xxg"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="499-K2-tbi"/>
+                        <exclude reference="4bC-WI-VU4"/>
+                        <exclude reference="qeO-55-yM2"/>
+                        <exclude reference="tFd-WL-V8f"/>
+                        <exclude reference="uTZ-Zj-A9s"/>
+                        <exclude reference="Bp3-Q3-IRO"/>
+                        <exclude reference="Leh-su-Ni2"/>
+                        <exclude reference="0oD-Yw-sMH"/>
+                        <exclude reference="7vS-hb-phP"/>
+                        <exclude reference="dct-vg-Evb"/>
+                        <exclude reference="hDA-Dx-ksx"/>
+                        <exclude reference="rNd-gN-flc"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="button" destination="fEn-1J-smf" id="5KQ-Th-tIv"/>
+                <outlet property="details" destination="F5Q-Rj-jat" id="2zz-mc-mGc"/>
+                <outlet property="icon" destination="AMb-W4-0YP" id="QuZ-kN-XSt"/>
+                <outlet property="type" destination="fEa-Ig-h8z" id="Mmk-Ml-H5n"/>
+            </connections>
+            <point key="canvasLocation" x="167" y="315"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="GPS.png" width="480" height="507"/>
+    </resources>
+</document>

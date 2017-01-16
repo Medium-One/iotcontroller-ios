@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11521.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="multiEventWidget" customModule="IOT_Control" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YO7-kQ-Bkr">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="1PK-mn-4nO"/>
+                            <constraint firstAttribute="width" constant="50" id="xhg-Dv-Cj4"/>
+                        </constraints>
+                        <state key="normal" image="Log.png"/>
+                        <connections>
+                            <action selector="eventSettings:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6VJ-JD-Fgk"/>
+                        </connections>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="No Events Available" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7nu-vV-zak">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="99" id="YIC-Qd-zzJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway" family="Raleway" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="YIC-Qd-zzJ"/>
+                            </mask>
+                        </variation>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[tag]:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31u-o7-bFL">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="7NX-Nr-Ugk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YO7-kQ-Bkr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CZG-wi-o1r"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7nu-vV-zak" secondAttribute="bottom" constant="-8" id="EkQ-Fn-gTZ"/>
+                    <constraint firstItem="YO7-kQ-Bkr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="FlE-kV-EEt"/>
+                    <constraint firstItem="31u-o7-bFL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="58" id="MFG-Ht-AlT"/>
+                    <constraint firstItem="31u-o7-bFL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QPQ-k0-dAd"/>
+                    <constraint firstItem="7nu-vV-zak" firstAttribute="leading" secondItem="YO7-kQ-Bkr" secondAttribute="trailing" constant="8" id="RkV-6c-dgk"/>
+                    <constraint firstItem="7nu-vV-zak" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="bNM-tE-z6Y"/>
+                    <constraint firstAttribute="trailing" secondItem="31u-o7-bFL" secondAttribute="trailing" id="dJ4-d3-g95"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7nu-vV-zak" secondAttribute="trailing" constant="-8" id="eTf-vi-gov"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="log" destination="7nu-vV-zak" id="k4L-r4-FZd"/>
+                <outlet property="tagLabel" destination="31u-o7-bFL" id="b1s-XJ-oOY"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Log.png" width="480" height="507"/>
+    </resources>
+</document>
